@@ -35,8 +35,9 @@
 
 ### Versión de Python/Anaconda y de cada uno de los módulos/paquetes y utilizados:
 
-- **Versión de Python:** Python 3.9.7
-- **Versión Módulos/paquetes utilizados:**
+#### **Versión de Python:** 
+- Python 3.9.7
+#### **Versión Módulos/paquetes utilizados:**
  - Csv - 1.0
  - Pandas - 1.3.4
  - Numpy - 1.20.3
