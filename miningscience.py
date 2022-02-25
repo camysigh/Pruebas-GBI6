@@ -11,7 +11,7 @@ def download_pubmed(keyword):
     """Esta función etá destinada a la minería de datos, y sirve para realizar una busqueda de los
     diferentes papers.
     En esta se debe ingresar como dato de entrada las palabras claves para realizar la búsqueda. 
-    Además el parámetro de busqueda del tema de interés, será ingresado manualmente, previamente.
+    Además el parámetro de busqueda del tema de interés, será ingresado manualmente.
     Se empleo el paquete de Biopython Entrez y Medline para poder buscar y obtener la data.
     La información a retornar será toda la data extraida y el la cantidad de artículos."""
     
