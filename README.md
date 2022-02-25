@@ -1,6 +1,8 @@
+<img src="https://www.agua.imdea.org/sites/default/files/images/news/2016-11/logo_ikiam.png" width="150">
+
 ## <p align="center">EXAMEN PARCIAL 2</p>
  
-***En este repositorio se encuentra la resolución del Examen Parcial 2 de la cátedra de Biología***
+***En este repositorio se encuentra la resolución del Examen Parcial 2 de la cátedra de Bioinformática***
  
 ### Datos personales:
  
