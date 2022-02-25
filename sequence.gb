@@ -1,0 +1,727 @@
+LOCUS       XM_046002502             234 bp    mRNA    linear   MAM 20-JAN-2022
+DEFINITION  PREDICTED: Meles meles small proline rich protein 4 (SPRR4), mRNA.
+ACCESSION   XM_046002502
+VERSION     XM_046002502.1
+DBLINK      BioProject: PRJNA796981
+KEYWORDS    RefSeq.
+SOURCE      Meles meles (Eurasian badger)
+  ORGANISM  Meles meles
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Carnivora; Caniformia;
+            Mustelidae; Melinae; Meles.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_060066) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Meles meles Annotation Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 9.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..234
+                     /organism="Meles meles"
+                     /mol_type="mRNA"
+                     /db_xref="taxon:9662"
+                     /chromosome="1"
+     gene            1..234
+                     /gene="SPRR4"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins"
+                     /db_xref="GeneID:123940106"
+     CDS             1..234
+                     /gene="SPRR4"
+                     /codon_start=1
+                     /product="small proline-rich protein 4"
+                     /protein_id="XP_045858458.1"
+                     /db_xref="GeneID:123940106"
+                     /translation="MSSQWQQLKQGLPWKAQQQQVKQPCQSPAVRCQETCTPQTKDPC
+                     ALQPKKKCPPKDTVIPNQHKCPMAHQAPKNKQK"
+ORIGIN      
+        1 atgtcttctc agtggcagca gctgaagcag ggcctgccct ggaaggccca gcagcagcag
+       61 gtgaagcaac cctgtcagtc acctgctgtc agatgtcaag aaacatgtac accacaaacc
+      121 aaggatccat gtgctctgca gcccaagaaa aaatgcccac ccaaggacac agtgatcccc
+      181 aaccagcaca agtgtcccat ggcccatcaa gcccccaaga ataaacagaa gtaa
+//
+
+LOCUS       XM_045895335             231 bp    mRNA    linear   MAM 13-JAN-2022
+DEFINITION  PREDICTED: Mirounga angustirostris small proline rich protein 4
+            (SPRR4), mRNA.
+ACCESSION   XM_045895335
+VERSION     XM_045895335.1
+DBLINK      BioProject: PRJNA795490
+KEYWORDS    RefSeq; corrected model.
+SOURCE      Mirounga angustirostris (Northern elephant seal)
+  ORGANISM  Mirounga angustirostris
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Carnivora; Caniformia;
+            Phocidae; Mirounga.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_025578519) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Mirounga angustirostris Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 9.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            internal stop codons :: corrected 1 genomic stop codon
+            ##RefSeq-Attributes-END##
+FEATURES             Location/Qualifiers
+     source          1..231
+                     /organism="Mirounga angustirostris"
+                     /mol_type="mRNA"
+                     /isolate="JK_09032017"
+                     /db_xref="taxon:9716"
+                     /chromosome="Unknown"
+                     /tissue_type="skeletal muscle"
+                     /collection_date="2017-09-03"
+     gene            1..231
+                     /gene="SPRR4"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein"
+                     /db_xref="GeneID:123858232"
+     CDS             1..231
+                     /gene="SPRR4"
+                     /note="The sequence of the model RefSeq protein was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: substituted 1 base at 1
+                     genomic stop codon"
+                     /codon_start=1
+                     /transl_except=(pos:7..9,aa:OTHER)
+                     /product="LOW QUALITY PROTEIN: small proline-rich protein
+                     4"
+                     /protein_id="XP_045751291.1"
+                     /db_xref="GeneID:123858232"
+                     /translation="MSXQQQRRQSLPQKAQQQQVKQPCQPPPCQMSRKCAPQTNSPHT
+                     PQPKKQCPPKGTVIPTQHKCPMAQQAPKNKQK"
+ORIGIN      
+        1 atgtcttagc agcagcagcg gaggcagagc ctgccccaga aggcccagca gcagcaggtg
+       61 aagcagccct gtcagccacc cccctgtcag atgtcaagaa aatgtgcacc acaaaccaac
+      121 agtccacaca ctccacagcc caagaaacaa tgcccaccca agggcacagt gatccccacc
+      181 cagcacaagt gtcccatggc ccagcaagcc cccaagaata aacagaagta a
+//
+
+LOCUS       XM_045817148             745 bp    mRNA    linear   MAM 12-JAN-2022
+DEFINITION  PREDICTED: Phyllostomus hastatus small proline rich protein 4
+            (SPRR4), transcript variant X2, mRNA.
+ACCESSION   XM_045817148
+VERSION     XM_045817148.1
+DBLINK      BioProject: PRJNA768865
+KEYWORDS    RefSeq.
+SOURCE      Phyllostomus hastatus (greater spear-nosed bat)
+  ORGANISM  Phyllostomus hastatus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Chiroptera; Microchiroptera;
+            Phyllostomidae; Phyllostominae; Phyllostomus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_025334018.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Phyllostomus hastatus Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 9.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..745
+                     /organism="Phyllostomus hastatus"
+                     /mol_type="mRNA"
+                     /isolate="PE091"
+                     /db_xref="taxon:9423"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="liver"
+                     /dev_stage="adult"
+                     /country="Peru: Loreto, Requena, Jenaro Herrera"
+                     /collection_date="2015-05-20"
+                     /collected_by="Laurel R. Yohe"
+     gene            1..745
+                     /gene="SPRR4"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 1 sample with support for all annotated introns"
+                     /db_xref="GeneID:123804725"
+     CDS             96..341
+                     /gene="SPRR4"
+                     /codon_start=1
+                     /product="small proline-rich protein 4 isoform X2"
+                     /protein_id="XP_045673104.1"
+                     /db_xref="GeneID:123804725"
+                     /translation="MSSQQQQQQQQQQQQLSQKIQQQQMKQPCQPPPVKCQETCASQT
+                     KDPCAPQTKKQYPPKGTSVPAQQTCPLAQQTPKSKQK"
+     polyA_site      745
+                     /gene="SPRR4"
+                     /experiment="COORDINATES: polyA evidence [ECO:0006239]"
+ORIGIN      
+        1 ggaagaggga gccagtgatg tggaggaacc tgggctctgc ttgagcagag gatgtgtgtg
+       61 ttcctcccag ccgcacatca gaatcacctg cagcaatgtc ttctcagcag cagcagcagc
+      121 agcagcagca gcagcaacag ctatcccaga agatccagca gcagcagatg aaacagccct
+      181 gtcagccacc acctgtcaaa tgtcaagaga cgtgtgcatc ccaaaccaag gatccatgtg
+      241 ctccccagac caagaagcag tatccaccca agggcacctc tgtccctgcc cagcagacat
+      301 gccccttggc ccagcaaacc cccaagagta aacagaagta aagatcaact ggaatacaac
+      361 ctgcttgcca cccagactac cagatggatc cttccttctt ccacctcctc ctactcaggg
+      421 tccagtgaag cactatcaga agttcttccc actgagaccc tactcacaca catcaccttt
+      481 gcctccaagt cttttatacc ctaccctgac tctctcctaa gtggacatga agaggcctca
+      541 ttctttccaa ccttcagctt gaccacagct atgctgtatc catgtcccaa agcaagaaat
+      601 gtatctgggt ttcttctagg attccacccc ggttagtagg gacaccagag gctgatgcac
+      661 agctcctgcc tcatttcctt ccccagctcc ccctccctca gtttctgtct tatttcctcc
+      721 cctaataaat ctgtgcttca tgtca
+//
+
+LOCUS       XM_045817147             878 bp    mRNA    linear   MAM 12-JAN-2022
+DEFINITION  PREDICTED: Phyllostomus hastatus small proline rich protein 4
+            (SPRR4), transcript variant X1, mRNA.
+ACCESSION   XM_045817147
+VERSION     XM_045817147.1
+DBLINK      BioProject: PRJNA768865
+KEYWORDS    RefSeq.
+SOURCE      Phyllostomus hastatus (greater spear-nosed bat)
+  ORGANISM  Phyllostomus hastatus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Chiroptera; Microchiroptera;
+            Phyllostomidae; Phyllostominae; Phyllostomus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_025334018.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Phyllostomus hastatus Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 9.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..878
+                     /organism="Phyllostomus hastatus"
+                     /mol_type="mRNA"
+                     /isolate="PE091"
+                     /db_xref="taxon:9423"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="liver"
+                     /dev_stage="adult"
+                     /country="Peru: Loreto, Requena, Jenaro Herrera"
+                     /collection_date="2015-05-20"
+                     /collected_by="Laurel R. Yohe"
+     gene            1..878
+                     /gene="SPRR4"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 100% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 1 sample with support for all annotated introns"
+                     /db_xref="GeneID:123804725"
+     CDS             145..474
+                     /gene="SPRR4"
+                     /codon_start=1
+                     /product="small proline-rich protein 4 isoform X1"
+                     /protein_id="XP_045673103.1"
+                     /db_xref="GeneID:123804725"
+                     /translation="MKGVVPHILNEESPWKEGPACGSESPAAMSSQQQQQQQQQQQQL
+                     SQKIQQQQMKQPCQPPPVKCQETCASQTKDPCAPQTKKQYPPKGTSVPAQQTCPLAQQ
+                     TPKSKQK"
+     polyA_site      878
+                     /gene="SPRR4"
+                     /experiment="COORDINATES: polyA evidence [ECO:0006239]"
+ORIGIN      
+        1 acaaacactg gcattgtcat tgtcattcaa gtacagtctc tgttctcatg ttcagtggct
+       61 tgctctctct ttctccaggc ctctgccaga aggaatgttt gaccatcagt cttgagtgca
+      121 ttttcacaga acagagattc caggatgaag ggtgtggtgc cacatattct taatgaagaa
+      181 agtccctgga aggagggtcc agcttgcgga tctgaatcac ctgcagcaat gtcttctcag
+      241 cagcagcagc agcagcagca gcagcagcaa cagctatccc agaagatcca gcagcagcag
+      301 atgaaacagc cctgtcagcc accacctgtc aaatgtcaag agacgtgtgc atcccaaacc
+      361 aaggatccat gtgctcccca gaccaagaag cagtatccac ccaagggcac ctctgtccct
+      421 gcccagcaga catgcccctt ggcccagcaa acccccaaga gtaaacagaa gtaaagatca
+      481 actggaatac aacctgcttg ccacccagac taccagatgg atccttcctt cttccacctc
+      541 ctcctactca gggtccagtg aagcactatc agaagttctt cccactgaga ccctactcac
+      601 acacatcacc tttgcctcca agtcttttat accctaccct gactctctcc taagtggaca
+      661 tgaagaggcc tcattctttc caaccttcag cttgaccaca gctatgctgt atccatgtcc
+      721 caaagcaaga aatgtatctg ggtttcttct aggattccac cccggttagt agggacacca
+      781 gaggctgatg cacagctcct gcctcatttc cttccccagc tccccctccc tcagtttctg
+      841 tcttatttcc tcccctaata aatctgtgct tcatgtca
+//
+
+LOCUS       XM_045790645             252 bp    mRNA    linear   MAM 11-JAN-2022
+DEFINITION  PREDICTED: Ursus americanus small proline rich protein 4 (SPRR4),
+            mRNA.
+ACCESSION   XM_045790645
+VERSION     XM_045790645.1
+DBLINK      BioProject: PRJNA795466
+KEYWORDS    RefSeq; corrected model; includes ab initio.
+SOURCE      Ursus americanus (American black bear)
+  ORGANISM  Ursus americanus
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Carnivora; Caniformia; Ursidae;
+            Ursus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_025576952) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Ursus americanus Annotation Release
+                                           100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 9.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            ab initio            :: 12% of CDS bases
+            frameshifts          :: corrected 1 indel
+            internal stop codons :: corrected 1 genomic stop codon
+            ##RefSeq-Attributes-END##
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-10                JAJHTY010000769.1  360646-360655       c
+            11-105              JAJHTY010000769.1  360402-360496       c
+            106-106             "N"                1-1
+            107-252             JAJHTY010000769.1  360256-360401       c
+FEATURES             Location/Qualifiers
+     source          1..252
+                     /organism="Ursus americanus"
+                     /mol_type="mRNA"
+                     /isolate="UA15103"
+                     /isolation_source="kidney"
+                     /db_xref="taxon:9643"
+                     /chromosome="Unknown"
+                     /ecotype="Eastern"
+                     /country="USA: Penobscot nation, Maine"
+                     /lat_lon="45.745671 N 68.499951 W"
+                     /collection_date="2015-05-18"
+     gene            1..252
+                     /gene="SPRR4"
+                     /note="The sequence of the model RefSeq transcript was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: inserted 1 base in 1 codon;
+                     Derived by automated computational analysis using gene
+                     prediction method: Gnomon. Supporting evidence includes
+                     similarity to: 1 Protein"
+                     /db_xref="GeneID:123787750"
+     CDS             1..252
+                     /gene="SPRR4"
+                     /note="The sequence of the model RefSeq protein was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: inserted 1 base in 1 codon;
+                     substituted 1 base at 1 genomic stop codon"
+                     /codon_start=1
+                     /transl_except=(pos:232..234,aa:OTHER)
+                     /product="LOW QUALITY PROTEIN: small proline-rich protein
+                     4"
+                     /protein_id="XP_045646601.1"
+                     /db_xref="GeneID:123787750"
+                     /translation="MGACSPVPAAISSQQQQPRLCLPQKAQQVKQPCQPXPVRCRETC
+                     APQTKDPCAPQPKKQCPPKGTVITTQPKCPMAPXARKNK"
+ORIGIN      
+        1 atgggtgcat gctcccctgt tcctgcagca atatcttctc agcagcagca gccgaggctg
+       61 tgcctgcccc agaaggccca gcaggtgaag cagccctgtc agccancccc tgtcagatgt
+      121 cgagaaacat gtgcaccaca aaccaaggat ccatgtgctc cacagcccaa gaaacaatgc
+      181 ccacccaagg gaacagtgat caccacccag cccaagtgtc ccatggcccc ataagcccgc
+      241 aagaataaat ag
+//
+
+LOCUS       XM_036453080             808 bp    mRNA    linear   MAM 22-DEC-2021
+DEFINITION  PREDICTED: Pipistrellus kuhlii small proline rich protein 4
+            (SPRR4), mRNA.
+ACCESSION   XM_036453080
+VERSION     XM_036453080.2
+DBLINK      BioProject: PRJNA666119
+KEYWORDS    RefSeq.
+SOURCE      Pipistrellus kuhlii (Kuhl's pipistrelle)
+  ORGANISM  Pipistrellus kuhlii
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Chiroptera; Microchiroptera;
+            Vespertilionidae; Pipistrellus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_023425523.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Dec 22, 2021 this sequence version replaced XM_036453080.1.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Pipistrellus kuhlii Annotation
+                                           Release 101
+            Annotation Version          :: 101
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 9.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..808
+                     /organism="Pipistrellus kuhlii"
+                     /mol_type="mRNA"
+                     /isolate="mPipKuh1"
+                     /db_xref="taxon:59472"
+                     /chromosome="Unknown"
+                     /sex="male"
+                     /tissue_type="flight muscle, heart, brain, liver, kidney"
+                     /dev_stage="adult"
+                     /country="Italy: Bergamo"
+                     /lat_lon="45.7430 N 9.5831 E"
+                     /collection_date="2017"
+                     /collected_by="Emma Teeling, Andrea Locatelli"
+     gene            1..808
+                     /gene="SPRR4"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 2 Proteins, and 99% coverage of
+                     the annotated genomic feature by RNAseq alignments,
+                     including 28 samples with support for all annotated
+                     introns"
+                     /db_xref="GeneID:118727307"
+     CDS             39..377
+                     /gene="SPRR4"
+                     /codon_start=1
+                     /product="small proline-rich protein 4"
+                     /protein_id="XP_036308973.1"
+                     /db_xref="GeneID:118727307"
+                     /translation="MDDAEPGLLVLIHHGPQKMREQVQDSRWPGSPVPAAMSSQQQQQ
+                     QQLPQKTQQHQVKQPCQPPPVKCQETCAPQTKDPCAPQAKKQCSPKGTATPAQQKCPM
+                     AQQVPQCKQK"
+ORIGIN      
+        1 cgggaacaca cctgctctca ggtgtctgct tcctagggat ggacgatgca gagcctggcc
+       61 ttctggtttt aatacaccat ggccctcaga aaatgagaga gcaggtgcaa gactcaagat
+      121 ggccaggttc acctgttcct gcagcaatgt cttcccagca gcagcaacag cagcagctgc
+      181 cccagaagac ccagcaacac caggtgaaac agccctgtca gccaccgcct gtcaaatgtc
+      241 aagaaacatg tgctccccaa accaaggatc catgtgctcc acaggccaag aagcaatgct
+      301 cgcctaaggg cacggccacc cctgcccagc agaagtgccc catggcccag caagtccccc
+      361 agtgtaaaca gaagtaagga tcaactggaa taccacctgc ttgacatcta ggctaccaga
+      421 tggggccctc tttcttccag ctcctccccc gggttccagg atttcccctt ctctcccact
+      481 tcctcctacc ctgggtcaaa tgaagcaact gttggaagtt cttcccactg agatcttcac
+      541 acacctcacc ttgcctccaa gttttctacc tatcaccctg atacgctctc aggtggatat
+      601 gagaaggcct ctttctctcc aacctccggc ttgaccacag ccatggtaca tccatgggcc
+      661 aaagcaaaga gtgtatctgg gcttcttcca agcttccaac ctgattagtg tggataccag
+      721 aggccaatgc acagcttcgg cctccttttc cttcccagct ctccttcccc tagttttttt
+      781 cttatttcct cccctaataa aactgtgt
+//
+
+LOCUS       XM_045546347             360 bp    mRNA    linear   PRI 21-DEC-2021
+DEFINITION  PREDICTED: Lemur catta small proline rich protein 4 (SPRR4), mRNA.
+ACCESSION   XM_045546347
+VERSION     XM_045546347.1
+DBLINK      BioProject: PRJNA779062
+KEYWORDS    RefSeq.
+SOURCE      Lemur catta (Ring-tailed lemur)
+  ORGANISM  Lemur catta
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Strepsirrhini;
+            Lemuriformes; Lemuridae; Lemur.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_059130.1) annotated using gene prediction method: Gnomon,
+            supported by mRNA and EST evidence.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Lemur catta Annotation Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 9.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..360
+                     /organism="Lemur catta"
+                     /mol_type="mRNA"
+                     /isolate="mLemCat1"
+                     /db_xref="taxon:9447"
+                     /chromosome="3"
+                     /sex="male"
+                     /tissue_type="spleen"
+                     /dev_stage="juvenile"
+                     /country="Denmark: Copenhagen Zoo"
+                     /lat_lon="55.67278 N 12.52139 E"
+                     /collection_date="2015-12-16"
+                     /collected_by="Mads Bertelsen"
+     gene            1..360
+                     /gene="SPRR4"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 4 mRNAs, 5 ESTs, 1 Protein"
+                     /db_xref="GeneID:123634616"
+     CDS             44..277
+                     /gene="SPRR4"
+                     /codon_start=1
+                     /product="small proline-rich protein 4"
+                     /protein_id="XP_045402303.1"
+                     /db_xref="GeneID:123634616"
+                     /translation="MSSQQQQQQQCPPQKAQQQQVKQPCQPPPVKCQETCVPKTKDPH
+                     APQAKKQCPPKGTAIPAQQKCPSAQQAPKSKQK"
+ORIGIN      
+        1 tagggtccag cgtgctacct ctggctcacc tgttcctgga gcaatgtctt cccagcagca
+       61 gcagcagcag cagtgcccac cccagaaggc ccagcagcag caggtgaagc agccctgtca
+      121 gccaccccct gtcaaatgcc aagagacgtg tgtacccaaa accaaggacc cacatgcacc
+      181 ccaggccaag aagcaatgcc cacccaaggg cacagccatt ccagcccagc agaagtgtcc
+      241 ctcagcccag caagccccca agagtaaaca gaagtgagga tggcctggag atcatcacct
+      301 gtccaccatc caggctgcca gatggatgga gccttctctt cttcctgctc ctcttttctc
+//
+
+LOCUS       XM_045479307             287 bp    mRNA    linear   MAM 17-DEC-2021
+DEFINITION  PREDICTED: Leopardus geoffroyi small proline rich protein 4
+            (SPRR4), mRNA.
+ACCESSION   XM_045479307
+VERSION     XM_045479307.1
+DBLINK      BioProject: PRJNA786922
+KEYWORDS    RefSeq.
+SOURCE      Leopardus geoffroyi (Geoffroy's cat)
+  ORGANISM  Leopardus geoffroyi
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Laurasiatheria; Carnivora; Feliformia; Felidae;
+            Felinae; Leopardus.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_059328) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Leopardus geoffroyi Annotation
+                                           Release 100
+            Annotation Version          :: 100
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 9.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..287
+                     /organism="Leopardus geoffroyi"
+                     /mol_type="mRNA"
+                     /isolate="Oge1"
+                     /db_xref="taxon:46844"
+                     /chromosome="C1"
+                     /sex="male"
+                     /cell_type="Fibroblast"
+                     /tissue_type="Fibroblast"
+                     /dev_stage="adult"
+     gene            1..287
+                     /gene="SPRR4"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 1 Protein, and 34% coverage of the
+                     annotated genomic feature by RNAseq alignments"
+                     /db_xref="GeneID:123598732"
+     CDS             12..287
+                     /gene="SPRR4"
+                     /codon_start=1
+                     /product="small proline-rich protein 4"
+                     /protein_id="XP_045335263.1"
+                     /db_xref="GeneID:123598732"
+                     /translation="MSVVGFLSGCPVPVAMSSWQQQMIQHLPQKAQQQVKQPCQPPSV
+                     RCQEMCAPQIKDPCAPQPKKQYSPKGTFVPTQHKCSSAQQAPKSKQK"
+ORIGIN      
+        1 gagcccttct catgtccgtt gtcgggtttc tttcaggctg ccctgtccct gtagcaatgt
+       61 cttcttggca gcagcagatg atccagcacc ttcctcagaa ggcccagcag caggtgaagc
+      121 agccctgtca gccaccctct gtcaggtgtc aggagatgtg tgcaccccaa atcaaagatc
+      181 catgtgctcc ccagcccaag aagcaatact cacccaaggg cacattcgtg cccacccagc
+      241 acaagtgctc ctcggcccag caagccccca agagtaaaca gaagtga
+//
+
+LOCUS       XM_005541811             757 bp    mRNA    linear   PRI 08-DEC-2021
+DEFINITION  PREDICTED: Macaca fascicularis small proline rich protein 4
+            (SPRR4), mRNA.
+ACCESSION   XM_005541811
+VERSION     XM_005541811.3
+DBLINK      BioProject: PRJNA690070
+KEYWORDS    RefSeq.
+SOURCE      Macaca fascicularis (crab-eating macaque)
+  ORGANISM  Macaca fascicularis
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+            Catarrhini; Cercopithecidae; Cercopithecinae; Macaca.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NC_052255) annotated using gene prediction method: Gnomon,
+            supported by mRNA and EST evidence.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            On Dec 8, 2021 this sequence version replaced XM_005541811.2.
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Macaca fascicularis Annotation
+                                           Release 102
+            Annotation Version          :: 102
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 9.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+FEATURES             Location/Qualifiers
+     source          1..757
+                     /organism="Macaca fascicularis"
+                     /mol_type="mRNA"
+                     /isolate="CE1976F"
+                     /db_xref="taxon:9541"
+                     /chromosome="1"
+     gene            1..757
+                     /gene="SPRR4"
+                     /note="Derived by automated computational analysis using
+                     gene prediction method: Gnomon. Supporting evidence
+                     includes similarity to: 5 mRNAs, 23 ESTs, 1 Protein, and
+                     94% coverage of the annotated genomic feature by RNAseq
+                     alignments"
+                     /db_xref="GeneID:102130390"
+     CDS             52..312
+                     /gene="SPRR4"
+                     /codon_start=1
+                     /product="small proline-rich protein 4"
+                     /protein_id="XP_005541868.2"
+                     /db_xref="GeneID:102130390"
+                     /translation="MSSQQQQQQQQQQQQQQQHCPPQRAQQQQVKQPCQPPPVKCQET
+                     CAPKTKDPCAPQVKKQCPPKGTVIPAQQKCPSAQQAPKSKQK"
+ORIGIN      
+        1 tctcatggtg tccctgcccg gtttccttta ggctcacctg ttcctagagc aatgtcttcc
+       61 cagcagcagc agcagcagca gcagcagcag cagcagcagc agcagcactg cccaccccag
+      121 agggcccagc agcagcaagt gaagcaacct tgtcagccac cccctgttaa atgtcaagag
+      181 acatgtgcac ccaaaaccaa ggatccatgt gctccccagg tcaagaagca atgcccaccg
+      241 aagggcaccg tcattccagc ccagcagaag tgtccctcag cccagcaagc ccccaagagt
+      301 aaacagaagt aaggatggac tggatattaa catattccac catcctggct atcagatgga
+      361 accttctctt cttccttctc tccttccctc cagctcttga gcctaccctc ctctcccatc
+      421 tcctcctgcc caagatgtaa ggaagcactg taaggatttc ttcctatcat acccctcccc
+      481 acacatacca ccttggcttc ttccatatcc caccctgatg ctctcccagg taggcatgag
+      541 agagacctca tcctctccag gctccagcat ggccacagct aaggcccatc cattccccaa
+      601 agtgaggaaa gtgtctgggc tttttctggg gttccaccct gacaagcagg gtcacagaga
+      661 ctggcgcaca gtttctgcct cattcctttc cctgatgccc cctaatctgg gcttctctcc
+      721 tgttttcccc aataaaataa tgtgcttcat gtaataa
+//
+
+LOCUS       XM_004718089             225 bp    mRNA    linear   MAM 06-DEC-2021
+DEFINITION  PREDICTED: Echinops telfairi small proline rich protein 4 (SPRR4),
+            mRNA.
+ACCESSION   XM_004718089
+VERSION     XM_004718089.1
+DBLINK      BioProject: PRJNA193504
+KEYWORDS    RefSeq; corrected model.
+SOURCE      Echinops telfairi (small Madagascar hedgehog)
+  ORGANISM  Echinops telfairi
+            Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+            Mammalia; Eutheria; Afrotheria; Tenrecidae; Tenrecinae; Echinops.
+COMMENT     MODEL REFSEQ:  This record is predicted by automated computational
+            analysis. This record is derived from a genomic sequence
+            (NW_022103944.1) annotated using gene prediction method: Gnomon.
+            Also see:
+                Documentation of NCBI's Annotation Process
+            
+            ##Genome-Annotation-Data-START##
+            Annotation Provider         :: NCBI
+            Annotation Status           :: Full annotation
+            Annotation Name             :: Echinops telfairi Annotation Release
+                                           103
+            Annotation Version          :: 103
+            Annotation Pipeline         :: NCBI eukaryotic genome annotation
+                                           pipeline
+            Annotation Software Version :: 9.0
+            Annotation Method           :: Best-placed RefSeq; Gnomon
+            Features Annotated          :: Gene; mRNA; CDS; ncRNA
+            ##Genome-Annotation-Data-END##
+            
+            ##RefSeq-Attributes-START##
+            frameshifts          :: corrected 1 indel
+            internal stop codons :: corrected 1 genomic stop codon
+            ##RefSeq-Attributes-END##
+PRIMARY     REFSEQ_SPAN         PRIMARY_IDENTIFIER PRIMARY_SPAN        COMP
+            1-159               AAIY03000049.1     187649-187807
+            160-225             AAIY03000049.1     187809-187874
+FEATURES             Location/Qualifiers
+     source          1..225
+                     /organism="Echinops telfairi"
+                     /mol_type="mRNA"
+                     /isolate="266"
+                     /db_xref="taxon:9371"
+                     /chromosome="Unknown"
+                     /sex="female"
+                     /country="Germany: Ludwig Maximilians University, Munich"
+     gene            1..225
+                     /gene="SPRR4"
+                     /note="The sequence of the model RefSeq transcript was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: deleted 1 base in 1 codon;
+                     Derived by automated computational analysis using gene
+                     prediction method: Gnomon. Supporting evidence includes
+                     similarity to: 2 Proteins"
+                     /db_xref="GeneID:101647716"
+     CDS             1..225
+                     /gene="SPRR4"
+                     /note="The sequence of the model RefSeq protein was
+                     modified relative to its source genomic sequence to
+                     represent the inferred CDS: deleted 1 base in 1 codon;
+                     substituted 1 base at 1 genomic stop codon"
+                     /codon_start=1
+                     /transl_except=(pos:40..42,aa:OTHER)
+                     /product="LOW QUALITY PROTEIN: small proline-rich protein
+                     4"
+                     /protein_id="XP_004718146.1"
+                     /db_xref="GeneID:101647716"
+                     /translation="MSSQPQKCPAQKPXQQQVKQPYQPPPVKCQEMPVPQTKDPCASP
+                     AKKQALPKGKTIPAQQTYPPVQQSPKSKPK"
+ORIGIN      
+        1 atgtcttccc agccgcagaa gtgcccagcc cagaagccct agcagcagca ggtgaagcag
+       61 ccctatcagc caccccctgt caaatgtcaa gaaatgcctg taccccaaac caaggaccca
+      121 tgtgcttctc cggccaagaa acaagccttg cccaaaggca aaaccattcc agcccagcag
+      181 acctatccgc cagtccaaca atccccgaag agtaaaccaa agtaa
+//
+
