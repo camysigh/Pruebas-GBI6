@@ -45,12 +45,13 @@
  - Miningscience *Este modulo ha sido creado: archivo miningscience.py*
  - Biopython - 1.79
 ### Explicación de la data utilizada:
-
-- SPRR4.seq - Contiene los asigment list, de cada articulo para la búsqueda SPRR4 para titulo de las publicaciones
+ 
+- SPRR4.seq - Contiene los asigment list, de cada artículo para la búsqueda SPRR4 para título de las publicaciones
 - coordenadas.csv - Contiene una tabla que consta de las columnas: country, latitud, longitud, name
 - sequence.aln - Contiene todos los alineamientos hechos en ClustalW2.1
 - sequence.dnd - Contienen las distancias de los alineamientos
-- sequence.fasta - Contiene la informacion fasta de los resultados obtenidos
+- sequence.fasta - Contiene la información fasta de los resultados obtenidos
 - sequence.gb -  Archivo tipo genbank
 - sequence_cladogram.png - Contiene la imagen del cladograma obtenida
-- sequence_tree.xml - Contiene la cosntrucción del arbol
+- sequence_tree.xml - Contiene la construcción del árbol
+
