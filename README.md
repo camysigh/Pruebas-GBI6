@@ -33,5 +33,7 @@
 - Google chrome
 - Terminal de Linux
 
+### Versión de Python/Anaconda y de cada uno de los módulos/paquetes y utilizados:
+
 ### Explicación de la data utilizada:
 
