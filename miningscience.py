@@ -4,7 +4,7 @@ from Bio import Medline
 import re
 import pandas as pd
 
-parametro = input ("ingrese un parámetro de restricción. Ejem [title/Abstract]:")
+parametro = input ("Ingrese un parámetro de restricción. Ejem [title/Abstract]:")
 
 def download_pubmed(keyword):
     

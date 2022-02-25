@@ -4,18 +4,18 @@ from Bio import Medline
 import re
 import pandas as pd
 
-parametro = input ("ingrese un parámetro de restricción. Ejem [title/Abstract]:")
+parametro = input ("Ingrese un parámetro de restricción. Ejem [title/Abstract]:")
 
 def download_pubmed(keyword):
     
-    """Esta función etá destinada a la minería de datos, y sirve para realizar una busqueda de
+    """Esta función está destinada a la minería de datos, y sirve para realizar una búsqueda de
     diferentes papers de un tema en específico.
     \nEn esta se debe ingresar como dato de entrada las palabras claves para realizar la búsqueda,
     entre comillas. 
-    \nAdemás el parámetro de busqueda del tema de interés, será ingresado manualmente, como se 
+    \nAdemás el parámetro de búsqueda del tema de interés, será ingresado manualmente, como se 
     muestra en el ejemplo del input.
-    \nSe empleo el paquete de Biopython Entrez y Medline para poder buscar y obtener la data.
-    \nLa información a retornar será toda la data extraida y la cantidad de artículos 
+    \nSe empleó el paquete de Biopython Entrez y Medline para poder buscar y obtener la data.
+    \nLa información a retornar será toda la data extraída y la cantidad de artículos 
     encontrados."""
     
     Entrez.email = "camila.freire@est.ikiam.edu.ec"
@@ -55,15 +55,15 @@ def download_pubmed(keyword):
 
 def mining_pubs(data_descargada, tipo):
     
-    """Previo a utilizar la función se debe cargar el el archivo miningscience como modulo msc.
+    """Previo a utilizar la función se debe cargar el el archivo miningscience como módulo msc.
     \nLa siguiente función depende de la función download_pubmed, ya que primero se le debe 
-    asignar a una vareable de cualquier nombre, los valores retornados por la función 
+    asignar a una variable de cualquier nombre, los valores retornados por la función 
     download_pubmed. EJM Papers=msc.download_pubmed('Ecuador proteomics'). 
-    \nPor otra parte, en esta función solo se puede obtener tres tipos de datas: 
+    \nPor otra parte, en esta función sólo se puede obtener tres tipos de datas: 
     Año de la publicación, escribiendo DP, número de autores por artículos, mediante 
-    el ingreso de AU y el número de paises, escribiendo AD.
-    \nComo dato de entrada, se debe ingresar el nombre de la vareable a la que se le ha asignado
-    los valores de la fucion download_pubmed. EJM: Papers. Asi como, el código mencionado de 
+    el ingreso de AU y el número de países, escribiendo AD.
+    \nComo dato de entrada, se debe ingresar el nombre de la variable a la que se le ha asignado
+    los valores de la función download_pubmed. EJM: Papers. Así como, el código mencionado de 
     cualquiera de estos tipos de data entre comillas.(Estos son separados por coma)
     \nEJEMPLO: msc.download_pubmed(Papers, 'DP'). 
     \nComo retorno se obtiene un data frame de la información requerida."""
