@@ -23,18 +23,22 @@ def download_pubmed(keyword):
 ####### term = Declarar los filtros de busqueda, en las declaraciones de búsqueda no deben contener comillas.
     handle1 = Entrez.esearch(db="pubmed", term=keyword+parametro)
     record1 = Entrez.read(handle1)
-### The default number of records that Entrez.esearch returns is 20. This is 
-### to prevent overloading NCBI's servers. To get the full list of records, 
-### change the retmax parameter:
+### El número predeterminado de registros que devuelve Entrez.esearch es 20. Esto es
+### para evitar sobrecargar los servidores de NCBI. Para obtener la lista completa de registros,
+### cambie el parámetro retmax:
     count=record1["Count"]
-
+## Entrez.esearch - para buscar la información requirida
     handle = Entrez.esearch(db="pubmed", term=keyword+parametro,  retmax=count, usehistory ="y")
-    record = Entrez.read(handle)
+    record = Entrez.read(handle) # Para que se lea handle y que se guarde en la nueva variable record
 
+# Guardar la IdList en una nueva variables, se saca la Id List de record
     ids=record["IdList"]
     #print ("Total: ", record["Count"])
 
-    webenv = record["WebEnv"]
+# Parámetros de entorno web (&WebEnv) y clave de consulta (&query_key) que especifican la ubicación 
+# en el servidor de historial de Entrez de la lista de UID cargados
+    
+    webenv = record["WebEnv"] 
     query_key = record["QueryKey"]
 
 #### retype = Tipo de recuperación. Hay dos valores permitidos para ESearch: 
@@ -45,13 +49,15 @@ def download_pubmed(keyword):
             #(predeterminado=0, correspondiente al primer registro de todo el conjunto). 
             # Este parámetro se puede usar junto con retmax para descargar un subconjunto arbitrario de 
             # UID recuperados de una búsqueda.
-#### retmax =
-    handle_efetch = Entrez.efetch(db="pubmed", rettype="medline", retmode = "text", retstart=0, retmax=1300, webenv=webenv, query_key=query_key)
+#### retmax = Muestra la cantidad de archivos a buscar
+    handle_efetch = Entrez.efetch(db="pubmed", rettype="medline", retmode = "text", retstart=0, retmax=1300, webenv=webenv, query_key=query_key) # efetch permite descargar la data
     info = handle_efetch.read()
     #print(info)
     info2 = re.sub(r'\n\s{6}', ' ', info)
     
     return(info2)
+
+########################################## Otra función
 
 def mining_pubs(data_descargada, tipo):
     
@@ -67,19 +73,19 @@ def mining_pubs(data_descargada, tipo):
     cualquiera de estos tipos de data entre comillas.(Estos son separados por coma)
     \nEJEMPLO: msc.download_pubmed(Papers, 'DP'). 
     \nComo retorno se obtiene un data frame de la información requerida."""
-    
+### Para obtener los años y los PMIDs    
     if tipo=='DP':
-        DPs = []
+        DPs = [] # crear lista vacia
         for line in data_descargada.splitlines():
-            if line.startswith("DP  -"):
-                DPs.append(line[:])
+            if line.startswith("DP  -"):# Para reconocer unicamente las lineas que inician con DP -
+                DPs.append(line[:])# guardar las lineas reconocidas anteriormente en una lista vacia
             #print(DPs)
-        form_text = "".join([str(_) for _ in DPs])
-        DP_year = re.findall(r'\d{4}', form_text)
+        form_text = "".join([str(_) for _ in DPs]) # cambiar de formato str a lista
+        DP_year = re.findall(r'\d{4}', form_text) # buscar los codigos PMIDs
         #print (DP_year)
         #print(len(DP_year))
-        PMID= re.findall(r'[P][M][I][D]\-\s(\d*)',data_descargada)
-        df = pd.DataFrame()
+        PMID= re.findall(r'[P][M][I][D]\-\s(\d*)',data_descargada) # Hacer una lista de los PMIDs como palabra
+        df = pd.DataFrame() # Generar un dataframe con ambas lista creadas
         df['PMID'] = PMID
         df['DP_year'] = DP_year
 
@@ -88,17 +94,17 @@ def mining_pubs(data_descargada, tipo):
         PMIDs_y_AUs = []
         AUs = []
         for line in data_descargada.splitlines():
-            if line.startswith("PMID-")+line.startswith("AU  -"):
-                PMIDs_y_AUs.append(line[:])
-            new_text = "".join([str(_) for _ in PMIDs_y_AUs])
-            text1 = re.sub(r'PMID-', ';PMID- ', new_text)
+            if line.startswith("PMID-")+line.startswith("AU  -"): # Buscar las lineas que comiencen con PMID
+                PMIDs_y_AUs.append(line[:])                       # Para de esa manera ordenar los autores segun PMID
+            new_text = "".join([str(_) for _ in PMIDs_y_AUs]) # Se repiten los pasos mencionados 
+            text1 = re.sub(r'PMID-', ';PMID- ', new_text) # utiliza estos comandos para separar cada PMID y AU 
             text2 = re.sub(r'AU  -', ' : AU  - ', text1)
-        search = text2.split(';')
-        search.pop(0)
+        search = text2.split(';') # Se separa la lista en elementos en cada ;
+        search.pop(0) # Se elimina el primer elemento que corresponde a un espacio en blanco
         se = len(search)
         ## Para fragmentar una lista
         n=1
-        output=[search[i:i + n] for i in range(0, se, n)]
+        output=[search[i:i + n] for i in range(0, se, n)] # Se framenta la multilista generada
         #print(output)
         ###
         Papers=[]
@@ -107,26 +113,29 @@ def mining_pubs(data_descargada, tipo):
             Papers=output[each]
             #print("\n", Papers)
             new_text1 = "".join([str(_) for _ in Papers])
-            text_1 = re.sub(r' AU  -', 'AU  -', new_text1)
+            text_1 = re.sub(r' AU  -', 'AU  -', new_text1) # quita el espacio entre : y AU
             #print("\n", new_text1)
-            sepa = text_1.split(':')
-            sepa.pop(0)
-            New_Papers.append(sepa)
+            sepa = text_1.split(':') # Se separa las multilistas en nuevos elementos cada :
+            sepa.pop(0) 
+            New_Papers.append(sepa) # Se guarda la informacion en una lista vacia creada anteriormente 
 
+            ## Conteo de numero de autores mediante:
         #print(New_Papers)
-        num_auth=[]
+        num_auth=[] 
         for new_each in range(len(New_Papers)):
             num_AUs=len(New_Papers[new_each])
             num_auth.append(num_AUs)
 
         #print(num_auth)
         #len(num_auth)
-    
+    ### Generacion de data frame
         PMID= re.findall(r'[P][M][I][D]\-\s(\d*)',data_descargada)
         df = pd.DataFrame()
         df['PMID'] = PMID
         df['num_auth'] = num_auth
         #print (df2)
+     
+    ### Para obtener los paises y el numero de estos se repite los pasos antes mencionados 
     elif tipo=='AD':
         AUs_y_ADs = []
         AUs = []
@@ -318,6 +327,7 @@ def mining_pubs(data_descargada, tipo):
         #print(len(text_24)) #7
         #print(text_24) 
     
+    ### Se unen todas las listas creadas anteriormente
         text_2.extend(text_3)
         text_2.extend(text_4)
         text_2.extend(text_5)
@@ -341,6 +351,8 @@ def mining_pubs(data_descargada, tipo):
         text_2.extend(text_23)
         text_2.extend(text_24)
         #print(text_2)
+        
+        ### Se unifica la escritura del nombre de algunos paises 
         country=[]
         Country=[]
         for e in range(len(text_2)):
@@ -356,7 +368,7 @@ def mining_pubs(data_descargada, tipo):
 
         #print(Country)
     
-        unique_country = list(set(Country))
+        unique_country = list(set(Country)) # se crea una lista unica con los nombres de los paises 
         
         unique_c=sorted(unique_country) ## Ordenar alfabeticamente una lista
 
@@ -387,7 +399,7 @@ def mining_pubs(data_descargada, tipo):
             if p in coordenadas.keys():
                 country_name.append(p)
                 country_count.append(Country.count(p))
-    
+    #### Creacion de dataframe
         df = pd.DataFrame()
         df['country_name'] = country_name
         df['country_count'] = country_count
