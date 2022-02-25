@@ -363,7 +363,7 @@ def mining_pubs(data_descargada, tipo):
 
         import csv
         coordenadas = {}
-        with open('coordenadas.csv') as file:
+        with open('data/coordenadas.csv') as file:
             csvr = csv.DictReader(file)
             for row in csvr: # Se escoje que etiquetas se usara y se las convierte en filas
                 coordenadas[row['name']] = [(row['latitude']),(row['longitude'])]
