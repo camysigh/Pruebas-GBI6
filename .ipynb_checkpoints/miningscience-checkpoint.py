@@ -32,7 +32,7 @@ def download_pubmed(keyword):
     record = Entrez.read(handle)
 
     ids=record["IdList"]
-    print ("Total: ", record["Count"])
+    #print ("Total: ", record["Count"])
 
     webenv = record["WebEnv"]
     query_key = record["QueryKey"]
