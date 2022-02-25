@@ -35,5 +35,14 @@
 
 ### Versión de Python/Anaconda y de cada uno de los módulos/paquetes y utilizados:
 
+- **Versión de Python:** Python 3.9.7
+- **Versión Módulos/paquetes utilizados:**
+ - Csv - 1.0
+ - Pandas - 1.3.4
+ - Numpy - 1.20.3
+ - Scipy - 1.7.1
+ - Matplotlib - 3.4.3 
+ - Miningscience *Este modulo ha sido creado: archivo miningscience.py*
+ - Biopython - 1.79
 ### Explicación de la data utilizada:
 
