@@ -4,16 +4,19 @@ from Bio import Medline
 import re
 import pandas as pd
 
-parametro = input ("ingrese un parámetro de restricción:")
+parametro = input ("ingrese un parámetro de restricción. Ejem [title/Abstract]:")
 
 def download_pubmed(keyword):
     
-    """Esta función etá destinada a la minería de datos, y sirve para realizar una busqueda de los
-    diferentes papers.
-    En esta se debe ingresar como dato de entrada las palabras claves para realizar la búsqueda. 
-    Además el parámetro de busqueda del tema de interés, será ingresado manualmente.
-    Se empleo el paquete de Biopython Entrez y Medline para poder buscar y obtener la data.
-    La información a retornar será toda la data extraida y el la cantidad de artículos."""
+    """Esta función etá destinada a la minería de datos, y sirve para realizar una busqueda de
+    diferentes papers de un tema en específico.
+    \nEn esta se debe ingresar como dato de entrada las palabras claves para realizar la búsqueda,
+    entre comillas. 
+    \nAdemás el parámetro de busqueda del tema de interés, será ingresado manualmente, como se 
+    muestra en el ejemplo del input.
+    \nSe empleo el paquete de Biopython Entrez y Medline para poder buscar y obtener la data.
+    \nLa información a retornar será toda la data extraida y la cantidad de artículos 
+    encontrados."""
     
     Entrez.email = "camila.freire@est.ikiam.edu.ec"
 ####### db = la base de datos que desea buscar,
@@ -52,13 +55,18 @@ def download_pubmed(keyword):
 
 def mining_pubs(data_descargada, tipo):
     
-    """La siguiente función depende de la función download_pubmed, ya que de aquí salen todos los 
-    datos a extraer. Por otra parte, en esta funcion solo se puede obtener tres tipos de datas: 
-    Año de la publicacion, escribiendo DP, numero de autores por artículos, mediante en ingreso de 
-    AU y el número de paises, escribiendo AD
-    Como dato de entrada, se debe ingresar el codigo mencionado de cualquiera de estols tipos de 
-    data. 
-    Como retorno se obtiene un data frame de la información."""
+    """Previo a utilizar la función se debe cargar el el archivo miningscience como modulo msc.
+    \nLa siguiente función depende de la función download_pubmed, ya que primero se le debe 
+    asignar a una vareable de cualquier nombre, los valores retornados por la función 
+    download_pubmed. EJM Papers=msc.download_pubmed('Ecuador proteomics'). 
+    \nPor otra parte, en esta función solo se puede obtener tres tipos de datas: 
+    Año de la publicación, escribiendo DP, número de autores por artículos, mediante el ingreso de 
+    AU y el número de paises, escribiendo AD.
+    \nComo dato de entrada, se debe ingresar el nombre de la vareable a la que se le ha asignado
+    los valores de la fucnion download_pubmed. EJM: Papers. Asi como, el código mencionado de 
+    cualquiera de estos tipos de data entre comillas.(**Estos van entre comillas**)
+    \nEJEMPLO: msc.download_pubmed(Papers, 'DP'). 
+    \nComo retorno se obtiene un data frame de la información requerida."""
     
     if tipo=='DP':
         DPs = []
@@ -350,7 +358,7 @@ def mining_pubs(data_descargada, tipo):
     
         unique_country = list(set(Country))
         
-        unique_c=sorted(unique_country)
+        unique_c=sorted(unique_country) ## Ordenar alfabeticamente una lista
 
         #print(unique_c)
 
