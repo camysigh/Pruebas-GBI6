@@ -60,11 +60,11 @@ def mining_pubs(data_descargada, tipo):
     asignar a una vareable de cualquier nombre, los valores retornados por la función 
     download_pubmed. EJM Papers=msc.download_pubmed('Ecuador proteomics'). 
     \nPor otra parte, en esta función solo se puede obtener tres tipos de datas: 
-    Año de la publicación, escribiendo DP, número de autores por artículos, mediante el ingreso de 
-    AU y el número de paises, escribiendo AD.
+    Año de la publicación, escribiendo DP, número de autores por artículos, mediante 
+    el ingreso de AU y el número de paises, escribiendo AD.
     \nComo dato de entrada, se debe ingresar el nombre de la vareable a la que se le ha asignado
-    los valores de la fucnion download_pubmed. EJM: Papers. Asi como, el código mencionado de 
-    cualquiera de estos tipos de data entre comillas.(**Estos van entre comillas**)
+    los valores de la fucion download_pubmed. EJM: Papers. Asi como, el código mencionado de 
+    cualquiera de estos tipos de data entre comillas.(Estos son separados por coma)
     \nEJEMPLO: msc.download_pubmed(Papers, 'DP'). 
     \nComo retorno se obtiene un data frame de la información requerida."""
     
