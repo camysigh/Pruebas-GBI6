@@ -1,6 +1,8 @@
 from Bio import Entrez
+from Bio.Seq import Seq
 from Bio import Medline
 import re
+import pandas as pd
 
 parametro = input ("ingrese un parámetro de restricción:")
 
@@ -48,7 +50,7 @@ def download_pubmed(keyword):
     
     return(info2)
 
-def mining_pubs(tipo):
+def mining_pubs(data_descargada, tipo):
     
     """La siguiente función depende de la función download_pubmed, ya que de aquí salen todos los 
     datos a extraer. Por otra parte, en esta funcion solo se puede obtener tres tipos de datas: 
@@ -60,7 +62,7 @@ def mining_pubs(tipo):
     
     if tipo=='DP':
         DPs = []
-        for line in info2.splitlines():
+        for line in data_descargada.splitlines():
             if line.startswith("DP  -"):
                 DPs.append(line[:])
             #print(DPs)
@@ -68,16 +70,16 @@ def mining_pubs(tipo):
         DP_year = re.findall(r'\d{4}', form_text)
         #print (DP_year)
         #print(len(DP_year))
-        PMID = ids
+        PMID= re.findall(r'[P][M][I][D]\-\s(\d*)',data_descargada)
         df = pd.DataFrame()
         df['PMID'] = PMID
         df['DP_year'] = DP_year
 
-        print(df)
+        #print(df)
     elif tipo=='AU':
         PMIDs_y_AUs = []
         AUs = []
-        for line in info2.splitlines():
+        for line in data_descargada.splitlines():
             if line.startswith("PMID-")+line.startswith("AU  -"):
                 PMIDs_y_AUs.append(line[:])
             new_text = "".join([str(_) for _ in PMIDs_y_AUs])
@@ -112,15 +114,15 @@ def mining_pubs(tipo):
         #print(num_auth)
         #len(num_auth)
     
-        PMID = ids
-        df2 = pd.DataFrame()
-        df2['PMID'] = PMID
-        df2['num_auth'] = num_auth
-        print (df2)
+        PMID= re.findall(r'[P][M][I][D]\-\s(\d*)',data_descargada)
+        df = pd.DataFrame()
+        df['PMID'] = PMID
+        df['num_auth'] = num_auth
+        #print (df2)
     elif tipo=='AD':
         AUs_y_ADs = []
         AUs = []
-        for line in info2.splitlines():
+        for line in data_descargada.splitlines():
             if line.startswith("AU  -")+line.startswith("AD  -"):
                 AUs_y_ADs.append(line[:])
             new_text = "".join([str(_) for _ in AUs_y_ADs])
@@ -347,12 +349,14 @@ def mining_pubs(tipo):
         #print(Country)
     
         unique_country = list(set(Country))
+        
+        unique_c=sorted(unique_country)
 
-        #print(unique_country)
+        #print(unique_c)
 
-        #print(len(unique_country))
+        #print(len(unique_c))
 
-        #unique_country[:]
+        #unique_c[:57]
     
         # Se activa el paquete csv, que permite leer archivos con terminación .csv
         # Se abre el archivo coordenadas.csv el cual consta de los paises, las latitudes y longitudes.
@@ -371,13 +375,13 @@ def mining_pubs(tipo):
         country_count = []
         # Se populiza las listas antes creadas
 
-        for p in unique_country:
+        for p in unique_c:
             if p in coordenadas.keys():
                 country_name.append(p)
                 country_count.append(Country.count(p))
     
-        df3 = pd.DataFrame()
-        df3['country_name'] = country_name
-        df3['country_count'] = country_count
-        print (df3)
-    return() 
+        df = pd.DataFrame()
+        df['country_name'] = country_name
+        df['country_count'] = country_count
+        #print (df3)
+    return(df) 
